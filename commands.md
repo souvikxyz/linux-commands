@@ -1,4 +1,4 @@
-
+﻿
 mkdir music
 touch song{1..10}.mp3
 mv song*.mp3 music
@@ -58,3 +58,4 @@ sudo firewall-cmd --permanent --zone=public --add-port=8080/tcp'
 sudo firewall-cmd --list-ports >> zones.txt
 
 sudo firewall-cmd --zone=public --permanent --add-forward-port=port=80:proto=tcp:toport=8080'
+hostname -I
