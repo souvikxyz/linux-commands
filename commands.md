@@ -59,3 +59,6 @@ sudo firewall-cmd --list-ports >> zones.txt
 
 sudo firewall-cmd --zone=public --permanent --add-forward-port=port=80:proto=tcp:toport=8080'
 hostname -I
+mkdir /tmp/var 'tar -cvjf /tmp/var/archive.tar.bz2 /etc/hosts'
+
+cat /etc/services | grep udp > udp_services.txt
